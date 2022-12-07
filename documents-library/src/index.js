@@ -4,12 +4,15 @@ import './index.css';
 import TopNav from './components/top-nav';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Render the top navigation bar
+const header = ReactDOM.createRoot(document.getElementById('header'));
+header.render(
   <React.StrictMode>
     <TopNav />
   </React.StrictMode>
 );
+
+// Render the main content
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
