@@ -9,28 +9,52 @@ class TopNav extends Component {
     render() { 
         return (
             <React.Fragment>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#">Navbar</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                <header>
+                    <nav className="sidebar">
+                        <div className="sidebar__header">
+                            <h3>Documents Library</h3>
+                        </div>
+                        <ul className="sidebar__items components">
+                            <li className="sidebar__item">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
+                                <ul className="collapse list-unstyled" id="homeSubmenu">
+                                    <li>
+                                        <a href="#">Home 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home 3</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Features</a>
+                            <li className="sidebar__item">
+                                <a href="#">About</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
+                            <li className="sidebar__item">
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
+                                <ul className="collapse list-unstyled" id="pageSubmenu">
+                                    <li>
+                                        <a href="#">Page 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page 3</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link disabled" href="#">Disabled</a>
+                            <li className="sidebar__item">
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li className="sidebar__item">
+                                <a href="#">Contact</a>
                             </li>
                         </ul>
-                    </div>
-                </nav>
+                    </nav>
+                </header>
             </React.Fragment>
         );
     }

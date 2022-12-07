@@ -13,6 +13,38 @@ $color-text-darker: #000000;
 $color-text-lightest: #bdbdbd;
 $color-text-darkest: #000000;
 $color-text-lightest: #bdbdbd;
+$color-link: #0d47a1;
+$color-link-light: #1565c0;
+$color-link-dark: #002171;
+$color-link-lighter: #9e9e9e;
+$color-link-darker: #000000;
+$color-link-lightest: #bdbdbd;
+$color-link-darkest: #000000;
+$color-light: #ffffff;
+$color-light-light: #ffffff;
+$color-light-dark: #e0e0e0;
+$color-light-lighter: #ffffff;
+$color-light-darker: #bdbdbd;
+$color-light-lightest: #ffffff;
+$color-light-darkest: #9e9e9e;
+$color-dark: #212121;
+$color-dark-light: #484848;
+$color-dark-dark: #000000;
+$color-dark-lighter: #757575;
+$color-dark-darker: #000000;
+$color-dark-lightest: #9e9e9e;
+$color-dark-darkest: #000000;
+$color-success: #4caf50;
+$color-success-light: #66bb6a;
+$color-success-dark: #43a047;
+$color-success-lighter: #a5d6a7;
+$color-success-darker: #388e3c;
+$color-success-lightest: #c8e6c9;
+$color-success-darkest: #2e7d32;
+$color-warning: #ff9800;
+$color-warning-light: #ffa726;
+$color-warning-dark: #fb8c00;
+$color-warning-lighter: #ffcc80;
 
 // fonts
 $font-family-primary: 'Roboto', sans-serif;
@@ -89,19 +121,53 @@ $breakpoint-4: 1200px;
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: $color-light;
 }
 
-.navbar{
-    background: #fff;
-    height: 80px;
+// sidebar
+
+header{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 25px;
+    height: 60px;
+    background: $color-light;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: $box-shadow-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;
+    &__header{
+        width: 100%;
+        height: 60px;
+        color: $color-dark-darker;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: $box-shadow-1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.sidebar.active{
+    left: 0;
 }
