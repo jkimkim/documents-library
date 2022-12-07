@@ -1,0 +1,39 @@
+// colors
+$color-primary: #0d47a1;
+$color-primary-light: #1565c0;
+$color-primary-dark: #002171;
+$color-secondary: #ff6f00;
+$color-secondary-light: #ff8f00;
+$color-secondary-dark: #e65100;
+$color-text: #212121;
+$color-text-light: #757575;
+$color-text-dark: #000000;
+$color-text-lighter: #9e9e9e;
+$color-text-darker: #000000;
+$color-text-lightest: #bdbdbd;
+$color-text-darkest: #000000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.navbar{
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
