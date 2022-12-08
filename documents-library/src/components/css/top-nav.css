@@ -71,7 +71,7 @@ header .search {
   justify-content: center;
   align-items: center;
   background: #bdbdbd;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
 }
 header .search input {
   width: 100%;
@@ -79,10 +79,13 @@ header .search input {
   border: none;
   outline: none;
   background: #ffffff;
-  padding: 0 20px;
+  padding-right: 10px;
+  margin-left: 10px;
   font-size: 1rem;
   font-weight: 500;
   color: #212121;
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
 }
 header .search input::-moz-placeholder {
   color: #212121;
@@ -94,12 +97,13 @@ header .search input::placeholder {
   color: #212121;
 }
 header .search button {
-  border: 0.125rem solid #ffffff;
+  border: none;
   outline: none;
-  background: #ffffff;
-  padding: 0 20px;
+  background: inherit;
+  padding: 0 5px;
   font-size: 1rem;
   font-weight: 500;
   color: #212121;
   cursor: pointer;
+  margin-right: 10px;
 }/*# sourceMappingURL=top-nav.css.map */
