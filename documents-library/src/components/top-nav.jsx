@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import './css/top-nav.css';
+import './css/top-nav.scss';
 
 class TopNav extends Component {
     state = {  } 
