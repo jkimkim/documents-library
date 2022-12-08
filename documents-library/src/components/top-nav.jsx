@@ -10,50 +10,20 @@ class TopNav extends Component {
         return (
             <React.Fragment>
                 <header>
-                    <nav className="sidebar">
-                        <div className="sidebar__header">
-                            <h3>Documents Library</h3>
-                        </div>
-                        <ul className="sidebar__items components">
-                            <li className="sidebar__item">
-                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
-                                <ul className="collapse list-unstyled" id="homeSubmenu">
-                                    <li>
-                                        <a href="#">Home 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Home 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Home 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="sidebar__item">
-                                <a href="#">About</a>
-                            </li>
-                            <li className="sidebar__item">
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
-                                <ul className="collapse list-unstyled" id="pageSubmenu">
-                                    <li>
-                                        <a href="#">Page 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Page 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Page 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="sidebar__item">
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li className="sidebar__item">
-                                <a href="#">Contact</a>
-                            </li>
+                    <div className="logo">
+                        <img src="https://www.techno.com/wp-content/uploads/2019/03/techno-logo.png" alt="Techno Logo" />
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
+                    <div className="search">
+                        <input type="text" placeholder="Search" />
+                        <button>Search</button>
+                    </div>
                 </header>
             </React.Fragment>
         );
