@@ -23,6 +23,30 @@ class Bootcamps extends Component{
                 title: 'React Bootcamp',
                 description: 'Learn React programming language',
                 image: 'https://jkimtech.web.app/044af99d3d73bd9f8ba8.png'
+            },
+            {
+                id: 4,
+                title: 'Angular Bootcamp',
+                description: 'Learn Angular programming language',
+                image: 'https://jkimtech.web.app/044af99d3d73bd9f8ba8.png'
+            },
+            {
+                id: 5,
+                title: 'Vue Bootcamp',
+                description: 'Learn Vue programming language',
+                image: 'https://jkimtech.web.app/044af99d3d73bd9f8ba8.png'
+            },
+            {
+                id: 6,
+                title: 'Node Bootcamp',
+                description: 'Learn Node programming language',
+                image: 'https://jkimtech.web.app/044af99d3d73bd9f8ba8.png'
+            },
+            {
+                id: 7,
+                title: 'Express Bootcamp',
+                description: 'Learn Express programming language',
+                image: 'https://jkimtech.web.app/044af99d3d73bd9f8ba8.png'
             }
         ]
     }
@@ -30,13 +54,12 @@ class Bootcamps extends Component{
         return (
             <React.Fragment>
                 {/* bootcamps section scrolls horizontally */}
-                // Bootcamps section scrolls horizontally 
                 <div className="container mt-4">
                     <div className="row">
                         <div className="col-md-12">
-                            <div className="card color-body">
-                                <div className="card-body">
-                                    <div className="row">
+                            <div className="card color-body hide-scroll-bar">
+                                <div className="flex-row card-body"style={{ overflowX: 'auto' }} >
+                                    <div className="row" style={{ flexWrap: 'nowrap' }}>
                                         {this.state.bootcamps.map((bootcamp) => (
                                             <div className="col-md-4" key={bootcamp.id}>
                                                 <div className="card">

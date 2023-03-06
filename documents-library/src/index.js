@@ -5,6 +5,7 @@ import TopNav from './components/top-nav';
 import IntroSection from './components/IntroSection.tsx';
 import FeaturesCard from './components/FeaturesCards.tsx';
 import CategoriesCard from './components/CategoriesCards.tsx';
+import Bootcamps from './components/Bootcamps.tsx';
 import reportWebVitals from './reportWebVitals';
 
 // Render the top navigation bar
@@ -15,6 +16,7 @@ header.render(
     <IntroSection />
     <FeaturesCard />
     <CategoriesCard />
+    <Bootcamps />
   </React.StrictMode>
 );
 
