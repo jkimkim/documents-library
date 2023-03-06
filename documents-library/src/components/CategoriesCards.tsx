@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './css/introcard.scss';
+import './css/top-nav.scss';
 
 class CategoriesCard extends Component{
     state = {
@@ -49,14 +49,15 @@ class CategoriesCard extends Component{
         return (
             <React.Fragment>
                 <div className="container mt-4">
-                    <div className="grid">
+                    <h1 className="text-center categories-bg">Categories</h1>
+                    <div className="row">
                         <div className="col-md-12">
                             <div className="card color-body">
                                 <div className="card-body">
                                     <div className="row">
                                         {this.state.categories.map((category) => (
-                                            <div className="col-md-4" key={category.id}>
-                                                <div className="card card-height mb-2">
+                                            <div className="col-md-4 mb-3" key={category.id}>
+                                                <div className="card category-card">
                                                     <div className="card-body">
                                                         <h5 className="card-title fw-bold">{category.title}</h5>
                                                         <p className="card-text">{category.description}</p>
