@@ -9,21 +9,24 @@ class TopNav extends Component {
     render() { 
         return (
             <React.Fragment>
-                <header>
+                <header className="flex flex-row">
                     <div className="logo">
-                        <img src="https://www.techno.com/wp-content/uploads/2019/03/techno-logo.png" alt="Techno Logo" />
+                        <img src="https://www.techno.com/wp-content/uploads/2019/03/techno-logo.png" alt="Docs Lib" />
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Featurs</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Bootcamp</a></li>
+                            <li><a href='#'>Blog</a></li>
                         </ul>
                     </nav>
-                    <div className="search">
-                        <input type="text" placeholder="Search" />
-                        <button>Search</button>
+                    {/* login and signup buttons */}
+                    <div className="login-signup flx flex-row">
+                        <button className="login btn btn-primary">Login</button>
+                        <button className="signup btn btn-primary">Signup</button>
                     </div>
+
                 </header>
             </React.Fragment>
         );
