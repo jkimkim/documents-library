@@ -9,9 +9,9 @@ class TopNav extends Component {
     render() { 
         return (
             <React.Fragment>
-                <header className="flex flex-row">
+                <header className="flex flex-row pt-1">
                     <div className="logo">
-                        <img src="https://www.techno.com/wp-content/uploads/2019/03/techno-logo.png" alt="Docs Lib" />
+                        <img src="https://www.techno.com/wp-content/uploads/2019/03/techno-logo.png" alt="DocsLib" />
                     </div>
                     <nav>
                         <ul>

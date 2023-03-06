@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import TopNav from './components/top-nav';
+import IntroSection from './components/IntroSection.tsx';
+import FeaturesCard from './components/FeaturesCards.tsx';
 import reportWebVitals from './reportWebVitals';
 
 // Render the top navigation bar
-const header = ReactDOM.createRoot(document.getElementById('header'));
+const header = ReactDOM.createRoot(document.getElementById('root'));
 header.render(
   <React.StrictMode>
     <TopNav />
+    <IntroSection />
+    <FeaturesCard />
   </React.StrictMode>
 );
 
