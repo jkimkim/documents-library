@@ -49,14 +49,14 @@ class CategoriesCard extends Component{
         return (
             <React.Fragment>
                 <div className="container mt-4">
-                    <div className="row">
+                    <div className="grid">
                         <div className="col-md-12">
                             <div className="card color-body">
                                 <div className="card-body">
                                     <div className="row">
                                         {this.state.categories.map((category) => (
                                             <div className="col-md-4" key={category.id}>
-                                                <div className="card">
+                                                <div className="card card-height mb-2">
                                                     <div className="card-body">
                                                         <h5 className="card-title fw-bold">{category.title}</h5>
                                                         <p className="card-text">{category.description}</p>

@@ -4,6 +4,7 @@ import './index.css';
 import TopNav from './components/top-nav';
 import IntroSection from './components/IntroSection.tsx';
 import FeaturesCard from './components/FeaturesCards.tsx';
+import CategoriesCard from './components/CategoriesCards.tsx';
 import reportWebVitals from './reportWebVitals';
 
 // Render the top navigation bar
@@ -13,6 +14,7 @@ header.render(
     <TopNav />
     <IntroSection />
     <FeaturesCard />
+    <CategoriesCard />
   </React.StrictMode>
 );
 

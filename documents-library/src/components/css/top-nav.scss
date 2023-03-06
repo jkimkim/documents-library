@@ -128,6 +128,52 @@ $border-4: 0.5rem solid $color-light;
 $border-5: 0.625rem solid $color-light;
 $border-6: 0.75rem solid $color-light;
 
+//cards
+$card-1: 0.125rem solid $color-light;
+$card-2: 0.25rem solid $color-light;
+$card-3: 0.375rem solid $color-light;
+$card-4: 0.5rem solid $color-light;
+
+//card shadows
+$card-shadow-1: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$card-shadow-2: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+$card-shadow-3: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+$card-shadow-4: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+
+//card dimensions
+$card-width-1: 100%;
+$card-width-2: 50%;
+$card-width-3: 33.333333%;
+$card-width-4: 25%;
+$card-width-5: 20%;
+$card-width-6: 16.666667%;
+$card-width-7: 14.285714%;
+$card-width-8: 12.5%;
+$card-width-9: 11.111111%;
+$card-width-10: 10%;
+$card-width-11: 9.090909%;
+$card-width-12: 8.333333%;
+$card-width-13: 7.692308%;
+$card-width-14: 7.142857%;
+$card-width-15: 6.666667%;
+
+//card heights
+$card-height-1: 100%;
+$card-height-2: 50%;
+$card-height-3: 33.333333%;
+$card-height-4: 25%;
+$card-height-5: 20%;
+$card-height-6: 16.666667%;
+$card-height-7: 14.285714%;
+$card-height-8: 12.5%;
+$card-height-9: 11.111111%;
+$card-height-10: 10%;
+$card-height-11: 9.090909%;
+$card-height-12: 8.333333%;
+$card-height-13: 7.692308%;
+$card-height-14: 7.142857%;
+$card-height-15: 6.666667%;
+
 
 *{
     margin: 0;
