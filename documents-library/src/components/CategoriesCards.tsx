@@ -59,9 +59,9 @@ class CategoriesCard extends Component{
                                             <div className="col-md-4 mb-3" key={category.id}>
                                                 <div className="card category-card">
                                                     <div className="card-body">
+                                                        <img src={category.image} className="img-fluid category-img" alt="Responsive image" />
                                                         <h5 className="card-title fw-bold">{category.title}</h5>
-                                                        <p className="card-text">{category.description}</p>
-                                                        <img src={category.image} className="img-fluid" alt="Responsive image" />
+                                                        <p className="card-text ">{category.description}</p>
                                                     </div>
                                                 </div>
                                             </div>
