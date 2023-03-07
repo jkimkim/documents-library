@@ -55,11 +55,12 @@ class Bootcamps extends Component{
             <React.Fragment>
                 {/* bootcamps section scrolls horizontally */}
                 <div className="container mt-4">
+                    <h1 className="text-center">Explore Bootcamps</h1>
                     <div className="row">
                         <div className="col-md-12">
-                            <div className="card color-body hide-scroll-bar">
+                            <div className="card color-body">
                                 <div className="flex-row card-body"style={{ overflowX: 'auto' }} >
-                                    <div className="row" style={{ flexWrap: 'nowrap' }}>
+                                    <div className="row hide-scroll-bar" style={{ flexWrap: 'nowrap' }}>
                                         {this.state.bootcamps.map((bootcamp) => (
                                             <div className="col-md-4" key={bootcamp.id}>
                                                 <div className="card">
