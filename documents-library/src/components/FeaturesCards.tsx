@@ -31,6 +31,7 @@ state = {
     return (
         <React.Fragment>
             <div className="container mt-4">
+                <h1 className="text-center categories-bg">Features</h1>
                 <div className="row">
                     <div className="col-md-12">
                         <div className="card color-body">
