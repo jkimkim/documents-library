@@ -17,7 +17,8 @@ class IntroSection extends Component {
                                         <div className="col-md-6">
                                             <h1 className="card-title fw-bold">Welcome to the Documents Library</h1>
                                             <p className="card-text">This is a simple document library that allows you to upload, view and delete documents.</p>
-                                            <p className="card-text">To get started, click the button below to sign up.</p>
+                                            <p className='card-text'>DocsLib is a free library of documents and resources for University Students. We have a collection of free documents and resources for Students from all fields.</p>
+                                            <p className="card-text">To get started, click the button below to sign up for free.</p>
                                             <a href="/signup" className="btn btn-primary">Sign Up</a>
                                         </div>
                                         <div className="col-md-6">
