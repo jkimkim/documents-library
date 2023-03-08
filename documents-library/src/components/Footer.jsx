@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import bootstrapBundleMin from 'bootstrap/dist/js/bootstrap.bundle.min';
 import bootstrapCss from 'bootstrap/dist/css/bootstrap.min.css';
+import './css/footer.scss';
 
 const Footer = () => { 
     return (
@@ -44,6 +45,17 @@ const Footer = () => {
                                 <li className='list-group-item'><a href="#">LinkedIn</a></li>
                             </ul>
                         </div>
+                    </div>
+
+                    {/* footer line */}
+                    <div className="footer-line"></div>
+
+                    {/* footer bottom */}
+                    <div className="footer-bottom flex-row bg-body p-2">
+                        <p className="text-center m-0">DocsLib &copy; 2023</p>
+                        <p className="text-center m-0">All Rights Reserved</p>
+                        <p className="text-center m-0">Designed by <a href="https://main.dun90xnopzyi2.amplifyapp.com/">John Kimiti</a></p>
+                        <p className="text-center m-0">Developed by <a href="https://main.dun90xnopzyi2.amplifyapp.com/">John Kimiti</a></p>
                     </div>
                 </div>
             </div>

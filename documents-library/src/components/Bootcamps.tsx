@@ -55,7 +55,7 @@ class Bootcamps extends Component{
         return (
             <React.Fragment>
                 {/* bootcamps section scrolls horizontally */}
-                <div className="container mt-4">
+                <div className="container mt-4" id='bootcamp'>
                     <h1 className="text-center categories-bg">Explore Bootcamps</h1>
                     <div className="row">
                         <div className="col-md-12">

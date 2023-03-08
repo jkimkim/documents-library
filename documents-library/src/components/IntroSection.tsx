@@ -7,7 +7,7 @@ class IntroSection extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container mt-5">
+                <div className="container mt-5" id='intro'>
                     <div className="row">
                         <div className="col-md-12">
                             {/* // This is the intro section card with text, an image and a signup button */}

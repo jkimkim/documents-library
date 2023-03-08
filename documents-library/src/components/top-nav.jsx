@@ -15,7 +15,7 @@ class TopNav extends Component {
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Featurs</a></li>
+                            <li><a href="#">Features</a></li>
                             <li><a href="#">Categories</a></li>
                             <li><a href="#">Bootcamp</a></li>
                             <li><a href='#'>Blog</a></li>

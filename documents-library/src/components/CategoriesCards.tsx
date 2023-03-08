@@ -48,7 +48,7 @@ class CategoriesCard extends Component{
     render() {
         return (
             <React.Fragment>
-                <div className="container mt-4">
+                <div className="container mt-4" id='categories'>
                     <h1 className="text-center categories-bg">Categories</h1>
                     <div className="row">
                         <div className="col-md-12">

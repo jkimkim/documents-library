@@ -388,3 +388,9 @@ header{
 .bg-body{
     background-color: $color-light-dark;
 }
+
+.footer-line {
+    border-top: 1px solid $color-light-dark;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
