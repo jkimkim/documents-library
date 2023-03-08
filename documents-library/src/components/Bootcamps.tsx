@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './css/introcard.scss';
+import './css/top-nav.scss'
 
 class Bootcamps extends Component{
     state = {
@@ -55,7 +56,7 @@ class Bootcamps extends Component{
             <React.Fragment>
                 {/* bootcamps section scrolls horizontally */}
                 <div className="container mt-4">
-                    <h1 className="text-center">Explore Bootcamps</h1>
+                    <h1 className="text-center categories-bg">Explore Bootcamps</h1>
                     <div className="row">
                         <div className="col-md-12">
                             <div className="card color-body">
