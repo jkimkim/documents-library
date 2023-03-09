@@ -16,7 +16,7 @@ class Login extends Component {
                                 <img src={logo} alt="" />
                             </div>
                             <div className="text-center mt-4 name">
-                                Jkimtech
+                                DocsLib
                             </div>
                             <form className="p-3 mt-3">
                                 <div className="form-field d-flex align-items-center">
