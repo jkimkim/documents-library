@@ -27,8 +27,7 @@ class TopNav extends Component {
                     </nav>
                     {/* login and signup buttons */}
                     <div className="login-signup flx flex-row">
-                        <button className="login btn btn-primary" data-bs-toggle='modal' data-bs-target='#staticBackdrop'>Login</button>
-                        <a href="#modal-2" className="btn btn-dark logout" role="button">Get started</a>
+                        <a data-bs-toggle='modal' data-bs-target='#loginModal' className="btn btn-dark logout" role="button">Get started</a>
                     </div>
 
                     {/* login and signup modal */}
