@@ -10,12 +10,12 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <h3 className='fw-bold'>DocsLib</h3>
-                            <p>DocsLib is a free library of documents and resources for University Students. We have a collection of free documents and resources for Students from all fields.</p>
+                            <h3 className='fw-semibold fs-5'>DocsLib</h3>
+                            <p className='fs-6'>DocsLib is a free library of documents and resources for University Students. We have a collection of free documents and resources for Students from all fields.</p>
                         </div>
                         <div className="col-md-3">
-                            <h3 className='fw-bold'>Categories</h3>
-                            <ul className='list-group list-group-flush'>
+                            <h3 className='fw-semibold fs-5'>Categories</h3>
+                            <ul className='list-group list-group-flush fs-6'>
                                 <li className='list-group-item'><a href="#">HTML</a></li>
                                 <li className='list-group-item'><a href="#">CSS</a></li>
                                 <li className='list-group-item'><a href="#">JavaScript</a></li>
@@ -26,8 +26,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-md-3">
-                            <h3 className='fw-bold'>Useful Links</h3>
-                            <ul className='list-group list-group-flush'>
+                            <h3 className='fw-semibold fs-5'>Useful Links</h3>
+                            <ul className='list-group list-group-flush fs-6'>
                                 <li className='list-group-item'><a href="#">Home</a></li>
                                 <li className='list-group-item'><a href="#">Categories</a></li>
                                 <li className='list-group-item'><a href="#">Bootcamp</a></li>
@@ -37,8 +37,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-md-3">
-                            <h3 className='fw-bold'>Follow Us</h3>
-                            <ul className='list-group list-group-flush'>
+                            <h3 className='fw-semibold fs-5'>Follow Us</h3>
+                            <ul className='list-group list-group-flush fs-6'>
                                 <li className='list-group-item'><a href="#">Facebook</a></li>
                                 <li className='list-group-item'><a href="#">Twitter</a></li>
                                 <li className='list-group-item'><a href="#">Instagram</a></li>
