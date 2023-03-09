@@ -34,11 +34,11 @@ class Login extends Component {
                                     <div id="lblLoginErrorMessage" className="errorlabel text-danger">
                                     </div>
                                 </div>
-                                <button className="btn mt-3">Login</button>
-                                <button className="btn mt-3">Signup</button>
+                                <button className="btn btn-dark mt-3">Login</button>
+                                <button className="btn btn-dark mt-3">Signup</button>
                             </form>
                             <div className="text-center fs-6">
-                                <a href="#">Forgot password?</a>OR 
+                                <a href="#">Forgot password? </a> OR 
                                 {/* Google and Facebook login */}
                             </div>
                         </div>

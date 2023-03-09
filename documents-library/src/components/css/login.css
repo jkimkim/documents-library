@@ -71,16 +71,16 @@
     box-shadow: none;
     width: 100%;
     height: 40px;
-    background-color: #03A9F4;
+    background-color: #212529;
     color: #fff;
     border-radius: 25px;
-    box-shadow: 3px 3px 3px #b1b1b1,
-        -3px -3px 3px #fff;
     letter-spacing: 1.3px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .wrapper .btn:hover {
-    background-color: #039BE5;
+    background-color: #ffffff;
+    color: #212529;
 }
 
 .wrapper a {
