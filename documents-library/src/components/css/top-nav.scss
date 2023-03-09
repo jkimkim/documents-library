@@ -22,7 +22,7 @@ $color-link-lightest: #bdbdbd;
 $color-link-darkest: #000000;
 $color-light: #ffffff;
 $color-light-light: #ffffff;
-$color-light-dark: #e0e0e0;
+$color-light-dark: #ecf0f3;
 $color-light-lighter: #ffffff;
 $color-light-darker: #bdbdbd;
 $color-light-lightest: #ffffff;
@@ -248,7 +248,7 @@ header{
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         .login{
             width: 100%;

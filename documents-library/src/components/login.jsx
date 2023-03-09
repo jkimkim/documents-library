@@ -28,10 +28,18 @@ class Login extends Component {
                                     <input type="password" name="password" id="pwd" placeholder="Password"
                                         required="required" />
                                 </div>
+                                <div id="divLoginError" className="group" style={
+                                    { display: 'none' }
+                                }>
+                                    <div id="lblLoginErrorMessage" className="errorlabel text-danger">
+                                    </div>
+                                </div>
                                 <button className="btn mt-3">Login</button>
+                                <button className="btn mt-3">Signup</button>
                             </form>
                             <div className="text-center fs-6">
-                                <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+                                <a href="#">Forgot password?</a>OR 
+                                {/* Google and Facebook login */}
                             </div>
                         </div>
                     </div>
