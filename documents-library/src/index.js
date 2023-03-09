@@ -1,27 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import TopNav from './components/top-nav';
-import LogedInNav from './components/LogedInNav';
-import Login from './components/login';
-import IntroSection from './components/IntroSection.tsx';
-import FeaturesCard from './components/FeaturesCards.tsx';
-import CategoriesCard from './components/CategoriesCards.tsx';
-import Bootcamps from './components/Bootcamps.tsx';
-import Footer from './components/Footer';
+
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Render the top navigation bar
 const header = ReactDOM.createRoot(document.getElementById('root'));
 header.render(
   <React.StrictMode>
-    <TopNav />
-    <Login/>
-    <IntroSection />
-    <FeaturesCard />
-    <CategoriesCard />
-    <Bootcamps />
-    <Footer />
+    <App />
   </React.StrictMode>
 );
 
