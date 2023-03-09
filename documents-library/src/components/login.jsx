@@ -37,13 +37,17 @@ function Login() {
                                 <input type="password" name="password" id="pwd" placeholder="Password"
                                     required="required" ref={password} />
                             </div>
+                            <div className="form-field d-flex align-items-center">
+                                <span className="fas fa-key"></span>
+                                <input type="password" name="confirm password" id="conPwd" placeholder="confirm Password"
+                                    required="required" ref={password} />
+                            </div>
                             <div id="divLoginError" className="group" style={
                                 { display: 'none' }
                             }>
                                 <div id="lblLoginErrorMessage" className="errorlabel text-danger">
                                 </div>
                             </div>
-                            <button className="btn btn-dark mt-3">Login</button>
                             <button className="btn btn-dark mt-3">Signup</button>
                         </form>
                         <div className="text-center fs-6">
