@@ -16,7 +16,8 @@ class TopNav extends Component {
           <React.Fragment>
             <header className="flex flex-row pt-1 pb-1">
               <div className="logo">
-                <img className="img-thumbnail" src={logo} alt="DocsLib" />
+                <img className="logo" src={logo} alt="DocsLib" />
+                DocsLib
               </div>
               <nav>
                 <ul>
@@ -35,7 +36,7 @@ class TopNav extends Component {
                 </ul>
               </nav>
               {/* login and signup buttons */}
-              <div className="login-signup flx flex-row">
+              <div className="login-signup flx">
                 <a
                   data-bs-toggle="modal"
                   data-bs-target="#loginModal"
