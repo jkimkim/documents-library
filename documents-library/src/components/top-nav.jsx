@@ -1,53 +1,57 @@
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 // import 'halfmoon/css/halfmoon-variables.min.css';
 // import 'halfmoon/css/halfmoon.min.css';
 
-import './css/top-nav.scss';
-import logo from '../img/docs-logo.png';
-
+import "./css/top-nav.scss";
+import logo from "../img/docs-logo.png";
 
 class TopNav extends Component {
-    state = {}
-    render() {
-        return (
-          <React.Fragment>
-            <header className="flex flex-row pt-1 pb-1">
-              <div className="logo fw-bold rounded">
-                <img className="logo mx-1 rounded" src={logo} alt="DocsLib" />
-                DocsLib
-              </div>
-              <nav>
-                <ul>
-                  <li>
-                    <a href="#features">Features</a>
-                  </li>
-                  <li>
-                    <a href="#categories">Categories</a>
-                  </li>
-                  <li>
-                    <a href="#bootcamp">Bootcamp</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                </ul>
-              </nav>
-              {/* login and signup buttons */}
-              <div className="login-signup flx">
-                <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#loginModal"
-                  className="btn btn-dark logout"
-                  role="button"
-                >
-                  Get started
-                </a>
-              </div>
+  state = {};
+  render() {
+    return (
+      <React.Fragment>
+        <header className="flex flex-row pt-1 pb-1">
+          <div
+            className="logo fw-bold rounded"
+            onClick={() => {
+              window.location = "/";
+            }}
+          >
+            <img className="logo mx-1 rounded" src={logo} alt="DocsLib" />
+            DocsLib
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#features">Features</a>
+              </li>
+              <li>
+                <a href="#categories">Categories</a>
+              </li>
+              <li>
+                <a href="#bootcamp">Bootcamp</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          {/* login and signup buttons */}
+          <div className="login-signup flx">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              className="btn btn-dark logout"
+              role="button"
+            >
+              Get started
+            </a>
+          </div>
 
-              {/* login and signup modal */}
-              {/* <div className="modal" id="modal-2" tabindex="-1" role="dialog">
+          {/* login and signup modal */}
+          {/* <div className="modal" id="modal-2" tabindex="-1" role="dialog">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
                                 <a href="#" className="btn close" role="button" aria-label="Close">
@@ -78,11 +82,10 @@ class TopNav extends Component {
                             </div>
                         </div>
                     </div> */}
-            </header>
-          </React.Fragment>
-        );
-    }
+        </header>
+      </React.Fragment>
+    );
+  }
 }
-
 
 export default TopNav;
