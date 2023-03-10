@@ -215,6 +215,9 @@ header{
             height: 100%;
             object-fit: cover;
         }
+        &:hover{
+            cursor: pointer;
+        }
     }
     nav{
         // width: 100%;
@@ -647,45 +650,6 @@ header{
             grid-template-columns: repeat(1, 1fr);
         }
     }
-        &__icons-div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            margin-top: 1rem;
-        }
-    
-        &__icon {
-            font-size: 2rem;
-            color: #fff;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-    
-            &:hover {
-                color: #1890ff;
-            }
-        }
-    
-        &__icon--active {
-            color: #1890ff;
-        }
-    
-        &__icon--disabled {
-            color: #fff;
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-    
-        &__icon--disabled:hover {
-            color: #fff;
-        }
-    
-        &__info {
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: #fff;
-            margin-top: 1rem;
-        }
 }
 
 .categories h1{
@@ -718,4 +682,61 @@ header{
          margin-top: 1rem;
          color: #000;
      }
+         &__icons-div {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             width: 100%;
+             margin-top: 1rem;
+         }
+    
+         &__icon {
+             font-size: 2rem;
+             color: #fff;
+             cursor: pointer;
+             transition: all 0.3s ease-in-out;
+    
+             &:hover {
+                 color: #1890ff;
+             }
+         }
+    
+         &__fa-icon {
+             font-size: 2rem;
+             color: #292525;
+             cursor: pointer;
+             transition: all 0.3s ease-in-out;
+    
+             &:hover {
+                 color: #1890ff;
+             }
+         }
+    
+         &__icon--active {
+             color: #1890ff;
+         }
+    
+         &__icon--disabled {
+             color: #fff;
+             opacity: 0.5;
+             cursor: not-allowed;
+         }
+    
+         &__icon--disabled:hover {
+             color: #fff;
+         }
+    
+         &__info {
+             font-size: $font-size-3;
+             font-weight: 500;
+             color: #181616;
+             margin-top: 1rem;
+         }
+ }
+
+ .category h5{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #0a0a0a;
+        margin-bottom: 1rem;
  }

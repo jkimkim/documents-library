@@ -112,7 +112,7 @@ class CategoriesCard extends Component {
                 <article className="category card" key={category.id}>
                   <div className="category__icons-div">
                     <span className="category__icon">
-                      <FontAwesomeIcon icon={category.icon} />
+                      <FontAwesomeIcon className="category__fa-icon" icon={category.icon} />
                     </span>
                   </div>
                   <div className="category__info">
