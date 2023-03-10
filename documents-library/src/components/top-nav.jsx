@@ -15,8 +15,8 @@ class TopNav extends Component {
         return (
           <React.Fragment>
             <header className="flex flex-row pt-1 pb-1">
-              <div className="logo fw-bold">
-                <img className="logo mx-1" src={logo} alt="DocsLib" />
+              <div className="logo fw-bold rounded">
+                <img className="logo mx-1 rounded" src={logo} alt="DocsLib" />
                 DocsLib
               </div>
               <nav>
