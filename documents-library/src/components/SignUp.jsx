@@ -6,35 +6,40 @@ import { Link } from "react-router-dom";
 import { Alert } from "react-bootstrap";
 
 import { useAuth } from "../Context/AuthContext";
-import logo from "../img/docs-logo.png";
+import logo from "../img/logo4.png";
 
-function Login() {
+function SignUp() {
   const emailRef = useRef();
   const passwordRef = useRef();
+  const confirmPasswordRef = useRef();
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e) {
-      e.preventDefault();
-      console.log("handleSubmit called");
+    e.preventDefault();
+    console.log("handleSubmit called");
+
+    if (passwordRef.current.value !== confirmPasswordRef.current.value) {
+      return setError("Passwords do not match");
+    }
 
     try {
-        setError('');
-        setLoading(true);           
-        await signup(emailRef.current.value, passwordRef.current.value);
-        setLoading(false);
+      setError("");
+      setLoading(true);
+      await signup(emailRef.current.value, passwordRef.current.value);
+      setLoading(false);
     } catch (error) {
-        console.log(error);
-        setError('Failed to create an account');
-        setLoading(false);
+      console.log(error);
+      setError("Failed to create an account");
+      setLoading(false);
     }
-}
+  }
   return (
     <React.Fragment>
       <div
         className="login-modal modal fade"
-        id="loginModal"
+        id="signupModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -73,17 +78,29 @@ function Login() {
                   ref={passwordRef}
                 />
               </div>
+              <div className="form-field d-flex align-items-center">
+                <span className="fas fa-key">
+                  <FontAwesomeIcon icon={faKey} />
+                </span>
+                <input
+                  type="password"
+                  name="confirm password"
+                  id="conPwd"
+                  placeholder="confirm Password"
+                  required="required"
+                  ref={confirmPasswordRef}
+                />
+              </div>
               <button
                 type="submit"
                 className="btn btn-dark mt-3"
                 disabled={loading}
               >
-                Log In
+                Signup
               </button>
             </form>
             <div className="text-center fs-6">
-              <a href="#">Forgot password? </a>
-              {/* <Link to="#signupModal"> Create an account</Link> */}
+              <a href="#">Forgot password? </a> OR
               {/* Google and Facebook login */}
             </div>
           </div>
@@ -93,4 +110,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignUp;
