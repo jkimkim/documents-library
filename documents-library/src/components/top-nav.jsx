@@ -43,7 +43,15 @@ class TopNav extends Component {
             <a
               data-bs-toggle="modal"
               data-bs-target="#loginModal"
-              className="btn btn-dark logout"
+              className="btn btn-dark login mx-1"
+              role="button"
+            >
+              log in
+            </a>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              className="btn btn-dark signup"
               role="button"
             >
               Get started
