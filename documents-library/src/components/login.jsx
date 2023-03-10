@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { Alert } from "react-bootstrap";
 
 import { useAuth } from "../Context/AuthContext";
-
 import logo from "../img/logo4.png";
 
 function Login() {
