@@ -4,7 +4,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import 'halfmoon/css/halfmoon-variables.min.css';
 // import 'halfmoon/css/halfmoon.min.css';
 
-
 import './css/top-nav.scss';
 import logo from '../img/docs-logo.png';
 
