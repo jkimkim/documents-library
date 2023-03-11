@@ -82,8 +82,8 @@ function Login() {
               </button>
             </form>
             <div className="text-center fs-6">
-              <a href="#">Forgot password? </a>
-              {/* <Link to="#signupModal"> Create an account</Link> */}
+              <a href="#">Forgot password? </a> OR
+              <Link to="/SignUp"> Create an account</Link>
               {/* Google and Facebook login */}
             </div>
           </div>

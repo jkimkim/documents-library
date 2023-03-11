@@ -15,16 +15,22 @@ import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <AuthProvider>
-      <TopNav />
-      <Login />
-      <SignUp />
-      <IntroSection />
-      <FeaturesCard />
-      <CategoriesCard />
-      <Bootcamps />
-      <Footer />
-    </AuthProvider>
+    <Router>
+      <AuthProvider>
+        <Routes>
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="#loginModal" element={<Login />} />
+        </Routes>
+        <TopNav />
+        <Login />
+        <SignUp />
+        <IntroSection />
+        <FeaturesCard />
+        <CategoriesCard />
+        <Bootcamps />
+        <Footer />
+      </AuthProvider>
+    </Router>
   );
 }
 
