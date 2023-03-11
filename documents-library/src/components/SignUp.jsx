@@ -18,7 +18,6 @@ function SignUp() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log("handleSubmit called");
 
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
       return setError("Passwords do not match");
@@ -29,8 +28,7 @@ function SignUp() {
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
       setLoading(false);
-    } catch (error) {
-      console.log(error);
+    } catch {
       setError("Failed to create an account");
       setLoading(false);
     }

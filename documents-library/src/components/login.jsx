@@ -23,7 +23,7 @@ function Login() {
         setLoading(true);           
         await login(emailRef.current.value, passwordRef.current.value);
         setLoading(false);
-    } catch (error) {
+    } catch {
         setError('Failed to log in');
         setLoading(false);
     }
