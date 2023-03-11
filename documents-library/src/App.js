@@ -12,6 +12,7 @@ import Bootcamps from './components/Bootcamps.tsx';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <AuthProvider>

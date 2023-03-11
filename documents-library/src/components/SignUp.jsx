@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Alert } from "react-bootstrap";
 
 import { useAuth } from "../Context/AuthContext";
-import logo from "../img/logo4.png";
+import logo from "../img/docs-logo.png";
 
 function SignUp() {
   const emailRef = useRef();
@@ -100,7 +100,7 @@ function SignUp() {
               </button>
             </form>
             <div className="text-center fs-6">
-              <a href="#">Forgot password? </a> OR
+              {/* <a href="#">Forgot password? </a> OR */}
               {/* Google and Facebook login */}
             </div>
           </div>
