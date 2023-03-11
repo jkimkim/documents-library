@@ -11,22 +11,20 @@ import logo from "../img/docs-logo.png";
 function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const { signup } = useAuth();
+  const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e) {
       e.preventDefault();
-      console.log("handleSubmit called");
 
     try {
         setError('');
         setLoading(true);           
-        await signup(emailRef.current.value, passwordRef.current.value);
+        await login(emailRef.current.value, passwordRef.current.value);
         setLoading(false);
     } catch (error) {
-        console.log(error);
-        setError('Failed to create an account');
+        setError('Failed to log in');
         setLoading(false);
     }
 }
@@ -83,7 +81,7 @@ function Login() {
             </form>
             <div className="text-center fs-6">
               <a href="#">Forgot password? </a> OR
-              <Link to="/SignUp"> Create an account</Link>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal"> Sign Up</a>
               {/* Google and Facebook login */}
             </div>
           </div>

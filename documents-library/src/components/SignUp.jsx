@@ -100,8 +100,8 @@ function SignUp() {
               </button>
             </form>
             <div className="text-center fs-6">
-              {/* <a href="#">Forgot password? </a> OR */}
-              {/* Google and Facebook login */}
+              OR 
+              <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"> Log In </a>
             </div>
           </div>
         </div>

@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import 'halfmoon/css/halfmoon-variables.min.css';
 // import 'halfmoon/css/halfmoon.min.css';
+import Login from "./login";
+import SignUp from "./SignUp";
 
 import "./css/top-nav.scss";
 import logo from "../img/docs-logo.png";
@@ -57,39 +59,6 @@ class TopNav extends Component {
               Get started
             </a>
           </div>
-
-          {/* login and signup modal */}
-          {/* <div className="modal" id="modal-2" tabindex="-1" role="dialog">
-                        <div className="modal-dialog" role="document">
-                            <div className="modal-content">
-                                <a href="#" className="btn close" role="button" aria-label="Close">
-                                    <span aria-hidden="true">&times;
-                                    </span>
-                                </a>
-                                <h5 className="modal-title">Sign in to your account</h5>
-                                <form>
-                                    <div className="form-group">
-                                        <label for="username" className="required">Email
-                                        </label>
-                                        <input type="email" id="email" className="form-control" placeholder="Email" required="required"/>
-                                    </div> <div className="form-group">
-                                        <label for="password" className="required">Password</label>
-                                        <input type="password" id="password" className="form-control" placeholder="Password" required="required" />
-                                    </div>
-                                    <div id="divLoginError" className="group" style={{display: 'none'}}>
-                                        <div id="lblLoginErrorMessage" className="errorlabel text-danger">
-                                        </div>
-                                    </div>
-                                    <input className="my-5 btn btn-primary btn-block signin" type="submit" value="Sign in" />
-                                    <input className="my-5 btn btn-primary btn-block signup" type="submit" value="Sign up" />
-                                </form>
-                                <div className="text-right mt-10">
-                                    <a href="#modal-2" className="hyperlink">Forgot password?
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
         </header>
       </React.Fragment>
     );
