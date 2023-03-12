@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import "./css/login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faKey } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import { Alert } from "react-bootstrap";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 import { useAuth } from "../Context/AuthContext";
 import logo from "../img/docs-logo.png";
@@ -14,6 +14,7 @@ function Login() {
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
       e.preventDefault();
@@ -22,7 +23,18 @@ function Login() {
         setError('');
         setLoading(true);           
         await login(emailRef.current.value, passwordRef.current.value);
-        setLoading(false);
+      setLoading(false);
+      {/* remove the modal after login */ }
+      
+      const modal = document.getElementById('loginModal');
+      const backdrop = document.querySelector('.modal-backdrop');
+      modal.classList.remove('show');
+      backdrop.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+      backdrop.setAttribute('aria-hidden', 'true');
+      backdrop.parentNode.removeChild(backdrop);
+
+      navigate('/Home');
     } catch {
         setError('Failed to log in');
         setLoading(false);

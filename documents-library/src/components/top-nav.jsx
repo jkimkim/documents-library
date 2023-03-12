@@ -3,9 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import 'halfmoon/css/halfmoon-variables.min.css';
 // import 'halfmoon/css/halfmoon.min.css';
-import Login from "./login";
-import SignUp from "./SignUp";
-
 import "./css/top-nav.scss";
 import logo from "../img/docs-logo.png";
 
@@ -58,7 +55,7 @@ class TopNav extends Component {
             >
               Get started
             </a>
-          </div>
+          </div>        
         </header>
       </React.Fragment>
     );

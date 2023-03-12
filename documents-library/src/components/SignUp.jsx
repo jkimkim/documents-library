@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./css/login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faKey } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { Alert } from "react-bootstrap";
 
 import { useAuth } from "../Context/AuthContext";
@@ -15,6 +15,7 @@ function SignUp() {
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -28,6 +29,20 @@ function SignUp() {
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
       setLoading(false);
+
+      {
+        /* remove the modal after login */
+      }
+
+      const modal = document.getElementById("loginModal");
+      const backdrop = document.querySelector(".modal-backdrop");
+      modal.classList.remove("show");
+      backdrop.classList.remove("show");
+      modal.setAttribute("aria-hidden", "true");
+      backdrop.setAttribute("aria-hidden", "true");
+      backdrop.parentNode.removeChild(backdrop);
+
+      navigate("/Home");
     } catch {
       setError("Failed to create an account");
       setLoading(false);
