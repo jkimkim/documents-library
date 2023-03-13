@@ -34,6 +34,12 @@ function Login() {
       backdrop.setAttribute('aria-hidden', 'true');
       backdrop.parentNode.removeChild(backdrop);
 
+      {/* restore scroll bar */ }
+
+      document.body.classList.remove('modal-open');
+      document.body.style.paddingRight = '0px';
+      body.style.overflow = 'auto';
+
       navigate('/Home');
     } catch {
         setError('Failed to log in');
