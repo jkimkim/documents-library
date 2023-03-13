@@ -35,6 +35,7 @@ function Login() {
       backdrop.parentNode.removeChild(backdrop);
 
       {/* restore scroll bar */ }
+      document.body.style.overflow = 'auto';
 
       navigate('/Home');
     } catch {
