@@ -36,6 +36,7 @@ function Login() {
 
       {/* restore scroll bar */ }
       document.body.style.overflow = 'auto';
+      document.body.style.paddingRight = '0px';
 
       navigate('/Home');
     } catch {
