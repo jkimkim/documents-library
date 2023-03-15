@@ -1,0 +1,111 @@
+//colors
+$color-primary: #f7f7f7;
+$color-primary-dark: #f0f0f0;
+$color-primary-darker: #e6e6e6;
+$color-primary-light: #ffffff;
+$color-primary-lighter: #ffffff;
+$color-secondary: #f7f7f7;
+$color-secondary-dark: #f0f0f0;
+$color-secondary-darker: #e6e6e6;
+$color-secondary-light: #ffffff;
+$color-secondary-lighter: #ffffff;
+$color-grey: #f7f7f7;
+$color-grey-dark: #f0f0f0;
+$color-grey-darker: #e6e6e6;
+$color-grey-light: #ffffff;
+$color-yellow: #fffb00;
+
+.most-popular-reads{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem 0;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__header{
+        grid-column: 1 / -1;
+        margin-bottom: 1rem;
+    }
+    &__book{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border: 1px solid $color-grey-light;
+        border-radius: 5px;
+        transition: all .2s ease-in-out;
+        &:hover{
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+        }
+        &__image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        &-title{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        &-author{
+            margin-top: .5rem;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+            &-title{
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-align: center;
+            }
+            &-author{
+                margin-top: .5rem;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: center;
+            }
+            &__rating{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &-star{
+                    margin-right: .5rem;
+                    color: $color-yellow;
+                }
+                &-number{
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+            &__category{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &-icon{
+                    margin-right: .5rem;
+                    color: $color-grey-darker;
+                }
+                &-name{
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
