@@ -6,7 +6,6 @@ function LoggedIn() {
     return (
         <AuthProvider>
             <LogedInNav />
-            <MostPopularReads />
         </AuthProvider>
     );
 }
