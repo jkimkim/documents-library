@@ -62,3 +62,13 @@ main {
 .scrollarea {
   overflow-y: auto;
 }
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: #212529;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
