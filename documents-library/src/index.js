@@ -4,12 +4,15 @@ import './index.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AuthProvider from './Context/AuthContext';
 
 // Render the top navigation bar
 const header = ReactDOM.createRoot(document.getElementById('root'));
 header.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </React.StrictMode>
 );
 
